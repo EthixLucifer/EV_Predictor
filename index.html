@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV Battery Capacity Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>EV Battery Capacity Prediction</h1>
+  <form action="/predict" method="post">
+    <label for="wheels">Number of Wheels:</label>
+    <input type="number" id="wheels" name="No_of_wheels" required><br>
+    <label for="battery_capacity">Battery Capacity (kWh):</label>
+    <input type="number" id="battery_capacity" name="Battery_Capacity" required><br>
+    <label for="vehicle_mass">Vehicle Mass (kg):</label>
+    <input type="number" id="vehicle_mass" name="Vehicle_mass_kg" required><br>
+    <button type="submit">Predict Battery Capacity Available</button>
+  </form>
+</body>
+</html>
