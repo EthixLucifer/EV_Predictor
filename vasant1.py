@@ -9,7 +9,7 @@ def load_model():
     return RandomForestRegressor(n_estimators=100, random_state=42)
 
 # Load your data (replace with your data loading logic)
-data = pd.read_csv('.\EV_RangeA1.csv')  # Assuming your data is in a CSV file
+data = pd.read_csv('EV_RangeA1.csv')  # Assuming your data is in a CSV file
 def fill_missing_values(data):
     """Fills missing values in the data with the mean."""
     return data.fillna(data.mean(), inplace=False)  # Avoid modifying original data
